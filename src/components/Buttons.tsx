@@ -1,21 +1,15 @@
 
 
-const Buttons = ({ setValue, button, value }) => {
-
-   const handleClick = () => {
-      if (button === 1) {
-         setValue(button);
-      } 
-   };
+const Buttons = ({ buttonValue, handleInputNumber}) => {
 
    return (
       <button 
          className={`w-[50px] h-[50px] shadow-md rounded-md`}
-         onClick={handleClick}
+         onClick={() => handleInputNumber(buttonValue)}
       >
-         { button }
+         { buttonValue }
       </button>
    )  
 }
 
-export default Buttons
+export default Buttons;
