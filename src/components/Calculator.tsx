@@ -16,8 +16,9 @@ const Calculator = () => {
       if (inputValue) { 
          setOperation(oper); 
          setFirstNumber(parseFloat(inputValue));
-         setInputValue(oper);
-      }
+         setInputValue('');
+      } 
+      // setInputValue(oper);
    };
 
    const handleCalculate = () => {
